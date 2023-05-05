@@ -1,0 +1,76 @@
+#import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ab = new Scanner(System.in);
+        System.out.println("WBBSE BOARD");
+        System.out.print("STUDENT NAME :- ");
+        String s1 = ab.nextLine();
+        System.out.println(s1);
+        System.out.print("subject 1 number:- ");
+        double d1 = ab.nextDouble();
+        System.out.println(d1);
+        System.out.println("total marks of this subject :-");
+        double d3 = ab.nextDouble();
+        System.out.println(d3);
+        double total = (d1 / d3);
+        double percentage = (total * 100);
+        System.out.println("Percentage");
+        System.out.println(percentage);
+        System.out.print("subject 2 number:- ");
+        double d4 = ab.nextDouble();
+        System.out.println(d4);
+        System.out.println("total marks of this subject");
+        double d5 = ab.nextDouble();
+        System.out.println(d5);
+        double total2 = (d4 / d5);
+        double percentage2 = (total2 * 100);
+        System.out.println("Percentage2");
+        System.out.println(percentage2);
+        System.out.print("subject 3 number:- ");
+        double d6 = ab.nextDouble();
+        System.out.println(d6);
+        System.out.println("total marks of this subject");
+        double d7 = ab.nextDouble();
+        System.out.println(d7);
+        double total3 = (d6 / d7);
+        double percentage3 = (total3 * 100);
+        System.out.println("Percentage");
+        System.out.println(percentage3);
+        System.out.print("subject 4 number:- ");
+        double d8 = ab.nextDouble();
+        System.out.println(d8);
+        System.out.println("total marks of this subject");
+        double d9 = ab.nextDouble();
+        System.out.println(d9);
+        double total4 = (d8 / d9);
+        double percentage4 = (total4 * 100);
+        System.out.println("Percentage");
+        System.out.println(percentage4);
+        System.out.print("subject 5 number:- ");
+        double d10 = ab.nextDouble();
+        System.out.println(d10);
+        System.out.println("total marks of this subject");
+        double d11 = ab.nextDouble();
+        System.out.println(d11);
+        double total5 = (d10 / d11);
+        double percentage5 = (total5 * 100);
+        System.out.println("Percentage");
+        System.out.println(percentage5);
+        double totalpercentage = (percentage + percentage2 + percentage3 + percentage4 + percentage5) / 5;
+        System.out.println("AVG percentage");
+        System.out.println(totalpercentage);
+        double thy = totalpercentage;
+        System.out.print("passing percentage :- ");
+        int ap3 = ab.nextInt();
+        System.out.println(ap3);
+        System.out.print("status :- ");
+        if(thy>= ap3){
+            System.out.println("pass");
+        }
+        else{
+            System.out.println("fail");
+        }
+    }
+}
