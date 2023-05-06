@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ab = new Scanner(System.in);
+        System.out.print("marks:- ");
+        int d1 = ab.nextInt();
+        System.out.print("Grade :- ");
+        if(d1 < 25){
+            System.out.println("d");
+        }
+              if(d1 >= 25 && d1<= 49){
+            System.out.println("c");
+        }
+           if(d1>=50 && d1<= 74){
+            System.out.println("b");
+        }
+           if(d1>=75){
+            System.out.println("a");
+        }
+    }
+}
