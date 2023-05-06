@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ab = new Scanner(System.in);
+        System.out.println("GOVERNMENT OFFICE EMPLOYEE'S TAX PERCENT");
+        System.out.println("total salary in lakh:- ");
+        float l1 = ab.nextFloat();
+        System.out.println(l1);
+        System.out.print("TAX:- ");
+        if (l1>=10.0){
+            System.out.println("30%");
+        }
+        else if ((l1>=5.0) && (l1<10.0)){
+            System.out.println("20%");
+        }
+        else if ((l1>=2.5) && (l1<5.0)) {
+            System.out.println("10%");
+        }
+        else if(l1<2.5){
+            System.out.println("No tax");
+
+        }
+        System.out.println("thank you");
+
+    }
+}
