@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ab = new Scanner(System.in);
+        System.out.print("SUB1:- ");
+        float a1 = ab.nextFloat();
+        System.out.println(a1);
+        System.out.print("total marks of sub:- ");
+        float a2 = 100f;
+        System.out.println(a2);
+        System.out.print("percentage:- ");
+        float percentage1 = ((a1*100)/a2);
+        System.out.println(percentage1);
+        System.out.print("sub 1 status:- ");
+        if (percentage1>=33){
+            System.out.println("pass");
+        }
+        else{
+            System.out.println("fail");
+        }
+        System.out.print("SUB2:- ");
+        float a3 = ab.nextFloat();
+        System.out.println(a3);
+        System.out.print("total marks of sub:- ");
+        float a4 = 100f;
+        System.out.println(a4);
+        System.out.print("percentage:- ");
+        float percentage2 = ((a3*100)/a4);
+        System.out.println(percentage2);
+        System.out.print("sub 2 status:- ");
+        if (percentage2>=33){
+            System.out.println("pass");
+        }
+        else{
+            System.out.println("fail");
+        }
+        System.out.print("SUB3:- ");
+        float a5 = ab.nextFloat();
+        System.out.println(a5);
+        System.out.print("total marks of sub:- ");
+        float a6 = 100f;
+        System.out.println(a6);
+        System.out.print("percentage:- ");
+        float percentage3 = ((a5*100)/a6);
+        System.out.println(percentage3);
+        System.out.print("sub 3 status:- ");
+        if (percentage3>=33){
+            System.out.println("pass");
+        }
+        else{
+            System.out.println("fail");
+        }
+        System.out.print("total marks :- ");
+        float total = (percentage1+percentage2+percentage3);
+        System.out.println(total);
+        System.out.print("Percentage:- ");
+        float ap= (total/3);
+        System.out.println(ap);
+        System.out.println("overall status:- ");
+        if(ap>=40){
+            System.out.println("pass");
+        }
+        else{
+            System.out.println("fail");
+        }
+    }
+}
